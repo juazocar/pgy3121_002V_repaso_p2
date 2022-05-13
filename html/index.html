@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoyo Prueba 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>   
+    <script src="../js/script.js" ></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="form1" name="form1" action="#">
+                    <fieldset>
+                    <legend>Formulario de contacto</legend>    
+                    <div class="form-group">
+                        <label id="lblNombre" for="nombreUsuario">Nombre</label>
+                        <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Ingrese su nombre..."></input>
+                        <br/>
+                        <label for="passwordUsuario">Contraseña</label>
+                        <input type="password" class="form-control" id="passwordUsuario" name="passwordUsuario" placeholder="Ingrese su contraseña..."></input>
+                        <br/>
+                        <label for="rePasswordUsuario">Reingrese Contraseña</label>
+                        <input type="password" class="form-control" id="rePasswordUsuario" name="rePasswordUsuario" placeholder="Ingrese su contraseña..."></input>
+                        <br/>
+                        <label for="selectRegion">Seleccione su región:</label>
+                        <select class="form-control">
+                            <option value="1">I Región</option>
+                            <option value="2">II Región</option>
+                            <option value="3">III Región</option>
+                            <option value="13">RM</option>
+                        </select>    
+                        <BR/>
+                        <label for="emailUsuario">Direccion de correo</label>
+                        <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="Ingrese su correo..."></input>
+                        <br/>
+                        <label for="edadUsuario">Edad</label>
+                        <input type="number" class="form-control" id="edadUsuario" name="edadUsuario" placeholder="Ingrese su edad..."></input>
+                        <br/>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="terminosCondiciones"></input>
+                            <label class="form-check-label" for="terminosCondiciones">Ha leido los términos y condiciones?</label>
+
+                        </div>
+                        <br/>
+                        <button onclick="validarFormulario(this)" >Validar</button>
+                        <input type="reset" value="Limpiar"></input>
+                        <input  id="boton1" name="boton1" type="button" value="click"></input>
+                                           </div> 
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
